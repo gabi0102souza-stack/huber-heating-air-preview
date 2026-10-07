@@ -1,0 +1,105 @@
+{
+  "baseURL": "http://127.0.0.1:4173/",
+  "phase": "local",
+  "observedUTC": "2026-10-07T22:06:34.405Z",
+  "viewports": [
+    {
+      "width": 360,
+      "status": "PASS",
+      "scrollWidth": 360,
+      "sticky": "grid",
+      "screenshots": [
+        "local-360.png",
+        "local-360-request.png"
+      ]
+    },
+    {
+      "width": 390,
+      "status": "PASS",
+      "scrollWidth": 390,
+      "sticky": "grid",
+      "screenshots": [
+        "local-390.png",
+        "local-390-request.png"
+      ]
+    },
+    {
+      "width": 768,
+      "status": "PASS",
+      "scrollWidth": 768,
+      "sticky": "none",
+      "screenshots": [
+        "local-768.png",
+        "local-768-request.png"
+      ]
+    },
+    {
+      "width": 1440,
+      "status": "PASS",
+      "scrollWidth": 1440,
+      "sticky": "none",
+      "screenshots": [
+        "local-1440.png",
+        "local-1440-request.png"
+      ]
+    }
+  ],
+  "assertions": [
+    "4 viewport layouts and no horizontal overflow",
+    "One h1, English language, preview metadata and factual JSON-LD",
+    "All internal anchors, telephone and email targets",
+    "Service and estimate preselection",
+    "Required fields, whitespace name, invalid phone and invalid email rejected",
+    "Encoded email draft, correct recipient and subject, honest status, focus transfer",
+    "Stale draft reset after edits",
+    "No transmission or third-party requests",
+    "Keyboard skip link and focus outline",
+    "Reduced-motion behavior",
+    "200% text at all four viewports",
+    "No-JavaScript contact fallback",
+    "HTTP 200 CSS and JavaScript"
+  ],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "assets": [
+    {
+      "url": "http://127.0.0.1:4173/assets/styles.css",
+      "status": 200,
+      "bytes": 15614,
+      "contentType": "text/css"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/site.js",
+      "status": 200,
+      "bytes": 2772,
+      "contentType": "text/javascript"
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 360,
+      "violations": [],
+      "passes": 25,
+      "incomplete": 1
+    },
+    {
+      "width": 390,
+      "violations": [],
+      "passes": 25,
+      "incomplete": 1
+    },
+    {
+      "width": 768,
+      "violations": [],
+      "passes": 25,
+      "incomplete": 1
+    },
+    {
+      "width": 1440,
+      "violations": [],
+      "passes": 25,
+      "incomplete": 1
+    }
+  ],
+  "status": "PASS"
+}
