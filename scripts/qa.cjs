@@ -98,6 +98,7 @@ const output = path.join(root, 'docs', 'qa');
       {
         await page.evaluate(() => {document.documentElement.style.fontSize='200%';});
         assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), '200% text must not overflow');
+        await page.screenshot({ path: path.join(output, `${phase}-${width}-text-200.png`) });
       }
       report.viewports.push({ width, status:'PASS', scrollWidth:geometry.scrollWidth, sticky:geometry.sticky, screenshots:[`${phase}-${width}.png`,`${phase}-${width}-request.png`] });
       await context.close();

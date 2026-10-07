@@ -1,0 +1,105 @@
+{
+  "baseURL": "https://gabi0102souza-stack.github.io/huber-heating-air-preview/",
+  "phase": "published",
+  "observedUTC": "2026-10-07T22:12:20.115Z",
+  "viewports": [
+    {
+      "width": 360,
+      "status": "PASS",
+      "scrollWidth": 360,
+      "sticky": "grid",
+      "screenshots": [
+        "published-360.png",
+        "published-360-request.png"
+      ]
+    },
+    {
+      "width": 390,
+      "status": "PASS",
+      "scrollWidth": 390,
+      "sticky": "grid",
+      "screenshots": [
+        "published-390.png",
+        "published-390-request.png"
+      ]
+    },
+    {
+      "width": 768,
+      "status": "PASS",
+      "scrollWidth": 768,
+      "sticky": "none",
+      "screenshots": [
+        "published-768.png",
+        "published-768-request.png"
+      ]
+    },
+    {
+      "width": 1440,
+      "status": "PASS",
+      "scrollWidth": 1440,
+      "sticky": "none",
+      "screenshots": [
+        "published-1440.png",
+        "published-1440-request.png"
+      ]
+    }
+  ],
+  "assertions": [
+    "4 viewport layouts and no horizontal overflow",
+    "One h1, English language, preview metadata and factual JSON-LD",
+    "All internal anchors, telephone and email targets",
+    "Service and estimate preselection",
+    "Required fields, whitespace name, invalid phone and invalid email rejected",
+    "Encoded email draft, correct recipient and subject, honest status, focus transfer",
+    "Stale draft reset after edits",
+    "No transmission or third-party requests",
+    "Keyboard skip link and focus outline",
+    "Reduced-motion behavior",
+    "200% text at all four viewports",
+    "No-JavaScript contact fallback",
+    "HTTP 200 CSS and JavaScript"
+  ],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "assets": [
+    {
+      "url": "https://gabi0102souza-stack.github.io/huber-heating-air-preview/assets/styles.css",
+      "status": 200,
+      "bytes": 15614,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://gabi0102souza-stack.github.io/huber-heating-air-preview/assets/site.js",
+      "status": 200,
+      "bytes": 2771,
+      "contentType": "application/javascript; charset=utf-8"
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 360,
+      "violations": [],
+      "passes": 25,
+      "incomplete": 1
+    },
+    {
+      "width": 390,
+      "violations": [],
+      "passes": 25,
+      "incomplete": 1
+    },
+    {
+      "width": 768,
+      "violations": [],
+      "passes": 25,
+      "incomplete": 1
+    },
+    {
+      "width": 1440,
+      "violations": [],
+      "passes": 25,
+      "incomplete": 1
+    }
+  ],
+  "status": "PASS"
+}

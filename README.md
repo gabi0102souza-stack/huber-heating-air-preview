@@ -14,7 +14,11 @@ Open http://127.0.0.1:4173. The root index.html is the production entry point. a
 
 ## Publication
 
-Target: a public GitHub repository named huber-heating-air-preview, main branch, GitHub Pages from main / (root). Deployment status and URLs are recorded in docs/QA_REPORT.md after verification. Do not treat local success as a completed public deployment.
+Published: https://gabi0102souza-stack.github.io/huber-heating-air-preview/
+
+Repository: https://github.com/gabi0102souza-stack/huber-heating-air-preview
+
+Branch: main. GitHub Pages serves main / (root), with HTTPS enforced. Local and public browser QA passed in 360, 390, 768 and 1440 px. Detailed results and limitations are recorded in docs/QA_REPORT.md.
 
 ## Request flow
 

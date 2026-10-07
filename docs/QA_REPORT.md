@@ -4,11 +4,32 @@ Observation date: October 7, 2026. Local verification finished at 22:06 UTC (19:
 
 ## Deployment
 
-- Required host: GitHub Pages.
-- Repository/public URL: pending GitHub CLI authentication.
-- Branch: main, prepared locally.
-- Public deployment status: NOT DEPLOYED. No functional public URL has been tested yet; this project is not considered complete.
-- Connected GitHub account information was available, but the connector cannot create a repository or configure Pages. A verified official portable GitHub CLI is awaiting user device authorization.
+- Public URL: https://gabi0102souza-stack.github.io/huber-heating-air-preview/
+- Repository: https://github.com/gabi0102souza-stack/huber-heating-air-preview
+- Branch: main. GitHub Pages source: main / (root), HTTPS enforced.
+- Deployment status: BUILT. The initial Pages workflow completed successfully: https://github.com/gabi0102souza-stack/huber-heating-air-preview/actions/runs/37694222838
+- Core site revision tested: 5363002a96ac084d95f77e60160b02ddfbc95784. The following documentation/evidence commit does not change index.html, CSS or site JavaScript.
+- Published browser verification started at 22:12 UTC (19:12 in Sao Paulo) on October 7, 2026. Full results: [published-results.json](qa/published-results.json).
+- Public HTML and both assets return HTTP 200, with the correct content types. Phone, email, anchors, form behavior, keyboard focus and responsive layout were rechecked on the published domain.
+
+## VERIFIED: published browser tests
+
+| Viewport | Layout | Form/links | 200% text | Accessibility |
+| --- | --- | --- | --- | --- |
+| 360 px mobile | PASS | PASS | PASS | 0 automatic violations |
+| 390 px mobile | PASS | PASS | PASS | 0 automatic violations |
+| 768 px tablet | PASS | PASS | PASS | 0 automatic violations |
+| 1440 px desktop | PASS | PASS | PASS | 0 automatic violations |
+
+No console exceptions, failed requests, external font/image loads or data submissions were observed. The no-JavaScript fallback also passed on the public URL. Screenshots of the public desktop, mobile form and 200% mobile text were opened and visually inspected.
+
+- [Published desktop](qa/published-1440.png)
+- [Published mobile 360 px](qa/published-360.png)
+- [Published mobile 390 px](qa/published-390.png)
+- [Published tablet](qa/published-768.png)
+- [Published mobile form](qa/published-390-request.png)
+- [Published desktop form](qa/published-1440-request.png)
+- [Published mobile text at 200%](qa/published-360-text-200.png)
 
 ## VERIFIED: local browser tests
 
@@ -57,7 +78,7 @@ axe reported one incomplete contrast check for the textarea because the fixed mo
 
 Uncompressed first-load source sizes are about 33 KB combined: HTML approximately 14.5 KB, CSS 15.6 KB, JavaScript 2.8 KB. Three site requests, zero remote fonts, zero photographs, zero third-party scripts and no application dependencies. System fonts eliminate external font loading and associated font-swap layout shifts.
 
-WebP/AVIF, responsive image variants and image lazy loading are not applicable to this image-free version. No Lighthouse or field Core Web Vitals score is claimed. Published transfer timing and production behavior must be tested after deployment.
+WebP/AVIF, responsive image variants and image lazy loading are not applicable to this image-free version. No Lighthouse or field Core Web Vitals score is claimed. Published behavior was tested on the actual domain. No throttled performance score or real-user measurement was collected.
 
 ## External links and contact limits
 
@@ -69,4 +90,4 @@ The lightweight architecture should reduce load cost. This is supported by the r
 
 ## NEEDS OWNER CONFIRMATION / limitations
 
-Public-domain operation and all public viewport checks remain pending authentication/deployment. Real phones, Safari/iOS, Android dialers, real email clients and screen-reader interaction were not tested. Directory data may be outdated; hours and location coverage require confirmation. No backend, appointment confirmation, official Facebook, authorized photos, emergency promise, pricing, financing, license badges or partner-brand claims are included. The complete owner checklist is in RESEARCH.md.
+Real phones, Safari/iOS, Android dialers, real email clients and screen-reader interaction were not tested. Directory data may be outdated; hours and location coverage require confirmation. No backend, appointment confirmation, official Facebook, authorized photos, emergency promise, pricing, financing, license badges or partner-brand claims are included. The complete owner checklist is in RESEARCH.md.
